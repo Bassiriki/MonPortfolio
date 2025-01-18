@@ -1,0 +1,91 @@
+.dashboard-container {
+  min-height: 100vh; /* Prend toute la hauteur de l'écran */
+   
+  background-size: cover; /* L'image couvre tout le conteneur */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* L'image ne se répète pas */
+  padding: 20px;
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #28a745;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.custom-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  padding-right: 70px;
+  height: 70px;
+  border: 2px solid #28a745; /* Bordure verte */
+  border-radius: 25px;
+  font-size: 30px;
+  color: #333;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #28a745; /* Icône verte */
+}
+
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #cce5ff, #d4edda); /* Dégradé bleu clair et vert */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.custom-card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.custom-button {
+  background-color: #28a745; /* Vert clair */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #218838; /* Vert plus foncé */
+  color: #fff;
+}
