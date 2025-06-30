@@ -60,7 +60,7 @@ export default function Portfolio() {
     web: ["React.js", "Angular", "Vue.js", "HTML", "CSS", "Express.js", "Laravel", "Spring Boot", "ASP.NET", "Django"],
     mobile: ["React Native", "Flutter"],
     devops: ["Docker", "Jenkins", "Kubernetes", "GitHub", "GitLab", "CI/CD", "AWS EC2"],
-    backend: ["C#", "PHP", "MySQL", "SQL Server", "Oracle", "MongoDB"],
+    backend: ["express.js", "Java", "MySQL", "SQL Server", "Oracle", "MongoDB"],
     tools: ["IntelliJ", "VS Code", "Eclipse IDE", "PyCharm", "Sublime Text"],
     ai: ["Google Colab", "R"],
     erp: ["Odoo"],
@@ -68,25 +68,25 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Application Bancaire Mobile",
-      description: "Application Flutter développée lors de ma formation à Orange Digital Center",
-      image: "/placeholder.svg?height=200&width=300",
-      tech: ["Flutter", "Firebase", "REST API"],
-      category: "mobile",
+      title: "Application  de Gestion de ferme",
+      description: "Application de gestion de ferme ",
+      image: "/farmmanager.png?height=200&width=300",
+      tech: ["express.js", "Angular ", "MongoDB"],
+      category: "Web",
     },
     {
-      title: "Système de Gestion BNDA",
-      description: "Contribution au système de gestion lors de mon stage à la BNDA",
-      image: "/placeholder.svg?height=200&width=300",
-      tech: ["Spring Boot", "MySQL", "Angular"],
+      title: "Application de Gestion de Stock",
+      description: "Application de gestion de stock pour les entreprises",
+      image: "/Capture d'écran 2025-01-18 184135.png?height=200&width=300",
+      tech: ["PHP", "MySQL"],
       category: "web",
     },
     {
-      title: "Infrastructure DevOps",
-      description: "Déploiement automatisé avec Docker et CI/CD",
-      image: "/placeholder.svg?height=200&width=300",
-      tech: ["Docker", "Jenkins", "AWS EC2", "GitLab"],
-      category: "devops",
+      title: "Application de Recrutement",
+      description: "Application de gestion de recrutement pour les entreprises",
+      image: "/BaaraAfrica.png?height=200&width=300",
+      tech: ["Spring boot", "React.js"],
+      category: "Web",
     },
   ]
 
@@ -159,7 +159,7 @@ export default function Portfolio() {
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8 animate-in fade-in duration-1000">
             <Avatar className="w-32 h-32 mx-auto mb-6 ring-4 ring-purple-400/50 animate-pulse">
-              <AvatarImage src="/placeholder.svg?height=128&width=128" alt="Bassiriki Mangane" />
+              <AvatarImage src="/siriki.png?height=128&width=128" alt="Bassiriki Mangane" />
               <AvatarFallback className="text-2xl bg-purple-600">BM</AvatarFallback>
             </Avatar>
           </div>
@@ -261,9 +261,9 @@ export default function Portfolio() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-64 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-lg overflow-hidden">
+              <div className="w-full h-85 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=256&width=400"
+                  src="/siriki.png?height=256&width=400"
                   alt="Workspace"
                   width={400}
                   height={256}
@@ -436,21 +436,26 @@ export default function Portfolio() {
           <p className="text-gray-300 text-lg mb-12">
             Intéressé par une collaboration ? N'hésitez pas à me contacter !
           </p>
-
+       <a href="mailto:Papisco4226@gmail.com">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
             <Button className="bg-purple-600 hover:bg-purple-700 text-white flex items-center">
               <Mail className="w-4 h-4 mr-2" />
               Papisco4226@gmail.com
             </Button>
-
-            <div className="flex space-x-4">
-              <Button
+          </div>
+        </a>
+             <div className="flex space-x-4">
+               <a href="https://github.com/Bassiriki" target="_blank" rel="noopener noreferrer">
+              <Button     
                 variant="outline"
                 size="icon"
                 className="border-gray-600 text-gray-300 hover:border-purple-400 hover:text-purple-300"
               >
                 <Github className="w-4 h-4" />
               </Button>
+                </a>
+                <a href="https://www.linkedin.com/in/bassiriki-mangane-1b0b2b1b6/" target="_blank" rel="noopener noreferrer">
+     
               <Button
                 variant="outline"
                 size="icon"
@@ -458,6 +463,7 @@ export default function Portfolio() {
               >
                 <Linkedin className="w-4 h-4" />
               </Button>
+              </a>
             </div>
           </div>
 
@@ -478,8 +484,8 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-        </div>
       </section>
+      
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-gray-800">
