@@ -2,15 +2,11 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Bassiriki.github.io/MonPortfolio",
   "scripts": {
-    "homepage": "https://Bassiriki.github.io/MonPortfolio",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "name": "front-ticmangane",
-    "version": "0.1.0",
-    "private": true,
     "build": "next build",
-     
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
